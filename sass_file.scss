@@ -1,0 +1,47 @@
+﻿div {
+    margin: 0px;
+    background: rgba(230, 184, 0, 0.3);
+    nav {
+        a {
+            color: black;
+            text-decoration: none;
+        }
+    }
+}
+
+%image_properties {
+    height: 350px;
+    width: inherit;
+    display: block;
+    padding-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+$font: Arial, Helvetica, sans-serif;
+
+$aligning: center;
+
+$margin: 15px 4px 4px 4px;
+
+
+img.AztecImg {
+    @extend %image_properties;
+}
+
+
+table {
+    tr {
+        th {
+            font-family: $font;
+            text-align: $aligning;
+            margin: $margin;
+        }
+
+        td {
+            font-family: $font;
+            text-align: $aligning;
+            margin: $margin;
+        }
+    }
+}
