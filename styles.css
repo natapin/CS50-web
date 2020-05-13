@@ -1,4 +1,4 @@
-﻿/*index.html*/
+﻿/*index part*/
 @media (min-width:500px) {
 
     /*index part*/
@@ -22,7 +22,24 @@
         color: white;
     }
 
-    /*aztec part*/
+    #GustaveDore {
+        height: 280px;
+        display: block;
+        width: inherit;
+        padding-top: 4px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 4px;
+    }
+
+    /*end of index part*/
+    /*Slavic part*/
+
+    .row, .col {
+        width: 100%;
+    }
+
+    /*Aztec part*/
 
     #aztec {
         background-image: linear-gradient(-74deg, coral, #b30000);
@@ -50,6 +67,18 @@
         margin-right: auto;
         padding-bottom: 5px;
     }
+
+    /*Mesopotamian part*/
+
+    .mesopotamianImg {
+        height: 350px;
+        display: block;
+        width: inherit;
+        padding-top: 4px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 4px;
+    }
 }
 
 ul {
@@ -61,18 +90,38 @@ ul {
     /*index part*/
 
     #index {
-        background-image: linear-gradient(-90deg, #ede5a6, #e05b3a);
+        background-image: linear-gradient(-90deg, #010038, #31305e);
         margin-left: 10px;
         margin-right: 10px;
     }
+
      .index {
-    color: black;
+    color: white;
     }
+
     .main {
+        color: white;
         text-decoration: none;
     }
 
-    /*aztec part*/
+    #GustaveDore {
+        height: 280px;
+        display: block;
+        width: inherit;
+        padding-top: 4px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 4px;
+    }
+
+    /*end of index part*/
+    /*slavic part*/
+
+    .row, .col {
+        width: 100%;
+    }
+
+    /*Aztec part*/
 
     #aztec {
         background-image: linear-gradient(-78deg, #ff9999, #ff531a);
@@ -99,19 +148,26 @@ ul {
         margin-right: 4px;
         padding-bottom: 4px;
     }
-}
 
-.index {
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
+    /*Mesopotamian part*/
+
+    .ghost-button.mesopotamia {
+        margin-left: 100px;
+        margin-right:auto;
+    }
+    .mesopotamianImg {
+        height: 200px;
+        display: block;
+        width: inherit;
+        padding-top: 4px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 4px;
+    }
 }
-    
+   
 h3 {
-    margin-top:150px;
-}
-
-#main {
-    text-decoration: none;
+    margin-top:60px;
 }
 
 a:hover {
@@ -125,23 +181,17 @@ a:hover {
     transition: background-color 0.3s ease-in, color 0.3s ease-in;
 }
 
-    /*end of index html*/
-    /*beginning of slavic.html*/
+    /*end of index part*/
+    /*Slavic part*/
 
-    h2, nav, .slavicdeity {
-    text-align:center;
-}
-
-.navigation, nav {
+.navigation, #slavicNav {
+    text-align: center;
     padding-left: 10px;
     padding-right: 10px;
     padding-bottom: 15px;
     padding-top: 15px;
     color: black;
-}
-
-.text {
-    text-align: center;
+    font-weight: bold;
 }
 
 .btn {
@@ -164,7 +214,10 @@ a:hover {
 .semi-transparent-button {
     display: block;
     box-sizing: border-box;
-    margin: 0 auto 5px auto;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
     padding: 8px;
     width: 80%;
     max-width: 250px;
@@ -176,7 +229,15 @@ a:hover {
     letter-spacing: 1px;
 }
 
-#slavic {
+#divSlavic {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background: rgba(0, 0, 0, 0.2);
+    border: 3px solid rgba(0, 0, 0, 0.4);
+    box-shadow: -2px 2px 4px rgba(20, 13, 28, 0.5);
+}
+
+    #slavic {
     background-size: auto;
     background-image: linear-gradient(85deg, coral, teal);
 }
@@ -189,28 +250,29 @@ p {
 /*end of Slavic part*/
 /*Aztec part*/
 
-#aztecNavForDif, a.aztecNav {
-    font-family: Arial, Helvetica, sans-serif;
-}
+    #aztecNav {
+        text-align: center;
+        padding-top: 15px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 15px;
+        color: black;
+        font-weight: bold;
+    }
 
-a.aztecNav {
+/*end of Aztec part*/
+/*Mesopotamian part*/
+
+#mesopotamianNavGeneral {
+    text-align: center;
+    padding-top: 15px;
     padding-left: 10px;
     padding-right: 10px;
     padding-bottom: 15px;
-}
-
-/*Mesopotamian part*/
-
-.mesopotamianImg {
-    height: 350px;
-    display: block;
-    width: inherit;
-    padding-top: 4px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-bottom: 4px;
+    color: black;
 }
 
 #mesopotamian {
+    background-size: auto;
     background-image: linear-gradient(-83deg, #3333ff, #40bf80);
 }

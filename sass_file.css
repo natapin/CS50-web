@@ -1,10 +1,11 @@
-/* line 7, ../../CS50-web/sass_file.scss */
-div.aztecDiv nav a, nav a {
+/* line 9, ../../CS50-web/sass_file.scss */
+#divMesopotamia nav a, #divAztec nav a, nav a, #slavicNav a {
   color: black;
+  font-weight: bold;
   text-decoration: none;
 }
 
-/* line 12, ../../CS50-web/sass_file.scss */
+/* line 15, ../../CS50-web/sass_file.scss */
 .ghost-button.transition, .ghost-button.mesopotamia {
   display: inline-block;
   width: 200px;
@@ -15,43 +16,19 @@ div.aztecDiv nav a, nav a {
   margin-bottom: 10px;
 }
 
-/* line 22, ../../CS50-web/sass_file.scss */
-div.aztecDiv {
-  margin: 0px;
-  background: rgba(230, 184, 0, 0.3);
-}
-
-/* line 26, ../../CS50-web/sass_file.scss */
-div.aztecDiv nav {
+/*index part*/
+/* line 27, ../../CS50-web/sass_file.scss */
+.index {
+  text-align: center;
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/* line 28, ../../CS50-web/sass_file.scss */
-div.aztecDiv nav a {
-  font-family: Arial, Helvetica, sans-serif;
+/* line 32, ../../CS50-web/sass_file.scss */
+#main {
+  text-decoration: none;
 }
 
 /* line 36, ../../CS50-web/sass_file.scss */
-nav a {
-  padding-right: 5px;
-  padding-left: 5px;
-}
-
-/* line 46, ../../CS50-web/sass_file.scss */
-table tr th {
-  font-family: Arial, Helvetica, sans-serif;
-  text-align: center;
-  margin: 15px 4px 4px 4px;
-}
-
-/* line 52, ../../CS50-web/sass_file.scss */
-table tr td {
-  font-family: Arial, Helvetica, sans-serif;
-  text-align: center;
-  margin: 15px 4px 4px 4px;
-}
-
-/* line 60, ../../CS50-web/sass_file.scss */
 .ghost-button.transition {
   color: #fff;
   border: 1px solid #fff;
@@ -59,10 +36,67 @@ table tr td {
   background: rgba(255, 255, 255, 0);
 }
 
-/* line 68, ../../CS50-web/sass_file.scss */
+/*end of index part*/
+/*Slavic part*/
+/* line 47, ../../CS50-web/sass_file.scss */
+h2, #slavicDiv, .slavicdeity {
+  text-align: center;
+}
+
+/* line 51, ../../CS50-web/sass_file.scss */
+.text {
+  text-align: center;
+}
+
+/*end of Slavic part*/
+/*Aztec part*/
+/* line 58, ../../CS50-web/sass_file.scss */
+#aztecNavForDif, a.aztecNav {
+  text-align: center;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* line 64, ../../CS50-web/sass_file.scss */
+#divMesopotamia, #divAztec {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background: rgba(0, 0, 0, 0.2);
+  border: 3px solid rgba(0, 0, 0, 0.4);
+  box-shadow: -2px 2px 4px rgba(20, 13, 28, 0.5);
+}
+
+/* line 79, ../../CS50-web/sass_file.scss */
+nav a, #slavicNav a {
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+/* line 89, ../../CS50-web/sass_file.scss */
+table tr th {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  margin: 15px 4px 4px 4px;
+}
+
+/* line 95, ../../CS50-web/sass_file.scss */
+table tr td {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  margin: 15px 4px 4px 4px;
+}
+
+/*end of Aztec part*/
+/*Mesopotamian part*/
+/* line 105, ../../CS50-web/sass_file.scss */
+#mesopotamianNavGeneral, #aztecNavForDif, a.aztecNav, #slavicNav, a.navigation {
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* line 111, ../../CS50-web/sass_file.scss */
 .ghost-button.mesopotamia {
-  margin-left: 250px;
-  margin-right: 30px;
   color: #000;
   border: 1px solid #000;
   margin-top: 10px;

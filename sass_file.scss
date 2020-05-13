@@ -4,55 +4,33 @@ $aligning: center;
 
 $margin: 15px 4px 4px 4px;
 
+$decoration: none;
+
 %navigation {
     color: black;
-    text-decoration: none;
+    font-weight: bold;
+    text-decoration: $decoration;
 }
 
 %ghostbuttons {
         display: inline-block;
         width: 200px;
         padding: 8px;
-        text-align: center;
-        outline: none;
-        text-decoration: none;
+        text-align: $aligning;
+        outline: $decoration;
+        text-decoration: $decoration;
         margin-bottom: 10px;
 }
 
-div.aztecDiv {
-    margin: 0px;
-    background: rgba(230, 184, 0, 0.3);
+/*index part*/
 
-    nav {
-         a {
-            @extend %navigation;
-        }
-    }
+.index {
+        text-align: $aligning;
+        font-family: $font;
 }
 
-nav {
-    a{
-        @extend %navigation;
-        padding-right: 5px;
-        padding-left: 5px;
-    }
-}
-
-
-table {
-    tr {
-        th {
-            font-family: $font;
-            text-align: $aligning;
-            margin: $margin;
-        }
-
-        td {
-            font-family: $font;
-            text-align: $aligning;
-            margin: $margin;
-        }
-    }
+#main {
+    text-decoration: $decoration;
 }
 
 .ghost-button.transition {
@@ -63,13 +41,78 @@ table {
     background: rgba(255, 255, 255, 0.0);
 }
 
-.ghost-button.mesopotamia {
-    @extend %ghostbuttons;
-    margin-left: 250px;
-    margin-right: 30px;
-    color: #000;
-    border: 1px solid #000;
-    margin-top: 10px;
-    background: rgba(255, 255, 255, 0.4);
-    font-weight: bold;
+/*end of index part*/
+/*Slavic part*/
+
+h2, #slavicDiv, .slavicdeity {
+    text-align: $aligning;
 }
+
+.text {
+    text-align: $aligning;
+}
+
+/*end of Slavic part*/
+/*Aztec part*/
+
+    #aztecNavForDif, a.aztecNav {
+        text-align: $aligning;
+        font-weight: bold;
+        font-family: $font;
+    }
+
+    #divMesopotamia, #divAztec {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        background: rgba(0, 0, 0, 0.2);
+        border: 3px solid rgba(0, 0, 0, 0.4);
+        box-shadow: -2px 2px 4px rgba(20, 13, 28, 0.5);
+
+        nav {
+            a {
+                @extend %navigation;
+            }
+        }
+    }
+
+    nav, #slavicNav {
+        a {
+            @extend %navigation;
+            padding-right: 5px;
+            padding-left: 5px;
+        }
+    }
+
+
+    table {
+        tr {
+            th {
+                font-family: $font;
+                text-align: $aligning;
+                margin: $margin;
+            }
+
+            td {
+                font-family: $font;
+                text-align: $aligning;
+                margin: $margin;
+            }
+        }
+    }
+    /*end of Aztec part*/
+    /*Mesopotamian part*/
+
+    #mesopotamianNavGeneral, #aztecNavForDif, a.aztecNav, #slavicNav, a.navigation {
+        font-weight: bold;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .ghost-button.mesopotamia {
+        @extend %ghostbuttons;
+        color: #000;
+        border: 1px solid #000;
+        margin-top: 10px;
+        background: rgba(255, 255, 255, 0.4);
+        font-weight: bold;
+    }
